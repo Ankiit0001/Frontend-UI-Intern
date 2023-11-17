@@ -245,7 +245,7 @@ export default function Info() {
                   marginBottom: '15px'
                 }}
               >
-                &quot;We won't share your answers with anyone (and won't ever tell you which friends said what about you)$quot;
+                &quot;We won&apos;t share your answers with anyone (and won&apos;t ever tell you which friends said what about you)$quot;
               </motion.p>
               <motion.p
                 style={{
