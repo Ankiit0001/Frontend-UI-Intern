@@ -107,13 +107,14 @@ export default function Features() {
                 {variants.map((d,i) => {
                   return (
                     <motion.div
+                      key={i}
                       style={{
                         minHeight: '15rem',
                         minWidth: '30%',
                         padding: '10px'
                       }}
                     >
-                    <Card key={i} style={{
+                    <Card style={{
                       backgroundColor: `${d.color}`,
                       borderRadius: 20,
                       height: '100%',
