@@ -1,12 +1,7 @@
 "use client";
 
-// import {
-//   FADE_DOWN_ANIMATION_VARIANTS,
-//   FADE_UP_ANIMATION_VARIANTS,
-// } from "@/lib/constants";
 import { motion, useInView } from "framer-motion";
 import React from "react";
-// import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { HeartFilledIcon } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
@@ -45,9 +40,6 @@ const features = [
 ];
 
 export default function Info() {
-  //   const { ref: refBottom, inView: inViewBottom } = useInView({
-  //     triggerOnce: false,
-  //   });
   const ref = React.useRef(null);
   const isInView = useInView(ref);
   const ref2 = React.useRef(null);
@@ -117,7 +109,7 @@ export default function Info() {
                         duration: 1,
                         ease: 'linear'
                       },
-                      opacity: isInView ? 1 : 0,
+                      opacity: isInView3 ? 1 : 0,
                     }}
                     style={{
                       marginLeft: '50px',
@@ -253,7 +245,7 @@ export default function Info() {
                   marginBottom: '15px'
                 }}
               >
-                "We won't share your answers with anyone (and won't ever tell you which friends said what about you)"
+                &quot;We won't share your answers with anyone (and won't ever tell you which friends said what about you)$quot;
               </motion.p>
               <motion.p
                 style={{
